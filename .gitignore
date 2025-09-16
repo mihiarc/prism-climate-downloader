@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+*.egg-info/
+dist/
+build/
+
+# PRISM Data (large files)
+prism_data/
+prism_daily_data/
+prism_daily_temp*/
+test_prism_download/
+*.bil
+*.zip
+*.hdr
+*.xml
+*.prj
+*.stx
+
+# Logs
+*.log
+download_log.txt
+
+# OS
+.DS_Store
+Thumbs.db
+*~
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment
+.env
