@@ -6,6 +6,20 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 This repository contains Python tools for bulk downloading PRISM (Parameter-elevation Regressions on Independent Slopes Model) climate data from Oregon State University. PRISM provides gridded climate data for the continental United States at 4km and 800m resolutions.
 
+## Package Management
+
+Use `uv` for Python package management in this project:
+```bash
+# Create virtual environment
+uv venv
+
+# Activate environment
+source .venv/bin/activate
+
+# Install packages
+uv pip install package_name
+```
+
 ## Key Commands
 
 ### Testing Downloads
