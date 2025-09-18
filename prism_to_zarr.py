@@ -273,9 +273,9 @@ class PRISMToZarrConverter:
                 batch_ds.to_zarr(output_zarr, mode='w', encoding=encoding)
                 data_written = True
             else:
-                # Append to existing store
+                # Append to existing store - no encoding when appending!
                 logger.info(f"Appending to Zarr store at {output_zarr}")
-                batch_ds.to_zarr(output_zarr, mode='a', append_dim='time', encoding=encoding)
+                batch_ds.to_zarr(output_zarr, mode='a', append_dim='time')
                 data_written = True
 
             # Clean up memory
